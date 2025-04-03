@@ -1,0 +1,16 @@
+node_modules
+dist
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode directory (si utilisé)
+.vscode/
