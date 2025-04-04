@@ -41,7 +41,8 @@ nav button:hover {
 
 /* Contenu principal */
 #content {
-    flex-grow: 1; /* Cet élément prendra tout l'espace disponible */
+    flex-grow: 1;
+    /* Cet élément prendra tout l'espace disponible */
     max-width: 1000px;
     margin: 50px auto;
     padding: 30px;
@@ -61,7 +62,7 @@ nav button:hover {
 
 .content-hours h2 {
     color: #cc5500;
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
@@ -88,8 +89,8 @@ nav button:hover {
 /* Sections */
 .content-hours,
 .content-address,
-.content-specialties, 
-.content-values, 
+.content-specialties,
+.content-values,
 .content-testimonials {
     margin-top: 30px;
     padding: 20px;
@@ -154,10 +155,17 @@ blockquote {
     content: "📍 Localisation";
     display: block;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     color: #cc5500;
-    margin-bottom: 15px; /* Ajouté pour uniformiser l'espacement */
+    margin-bottom: 15px;
+    /* Ajouté pour uniformiser l'espacement */
     text-align: center;
+}
+
+.content-values {
+    text-align: center;
+    font-size: 18px;
+
 }
 
 
@@ -180,5 +188,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
-
