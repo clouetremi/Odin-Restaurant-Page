@@ -1,0 +1,184 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Mise en page globale */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #4a4a4a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button:hover {
+    background-color: white;
+    color: #4a4a4a;
+}
+
+/* Contenu principal */
+#content {
+    flex-grow: 1; /* Cet élément prendra tout l'espace disponible */
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Horaires */
+.content-hours {
+    background: #fffaef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-hours h2 {
+    color: #cc5500;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Grid pour les horaires */
+.hours-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    font-size: 18px;
+    text-align: left;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.content-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cc5500;
+}
+
+/* Sections */
+.content-hours,
+.content-address,
+.content-specialties, 
+.content-values, 
+.content-testimonials {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fffaef;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #cc5500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Images */
+.specialty {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.specialty img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+/* Témoignages */
+blockquote {
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Présentation */
+.content-presentation {
+    background: #fffaef;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Localisation */
+.content-address {
+    background: #fffaef;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-address::before {
+    content: "📍 Localisation";
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #cc5500;
+    margin-bottom: 15px; /* Ajouté pour uniformiser l'espacement */
+    text-align: center;
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
