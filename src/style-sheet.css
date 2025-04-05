@@ -188,3 +188,30 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* CSS à partir de Menu */
+h3 {
+    color: #cc5500;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.drink-item,
+.starter-item {
+    background: #fffaef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.drink-menu,
+.starter-menu {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cc5500;
+}
