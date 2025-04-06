@@ -1,4 +1,7 @@
+export default function loadMenu() {
+
 const content = document.getElementById("content");
+content.innerHTML = ""; // Nettoie le contenu précédent
 
 // Titre principal du menu pour les boissons
 const drinkMenu = document.createElement("div");
@@ -57,10 +60,10 @@ addStarters(content, "Rouleaux de printemps taïwanais", "Rouleaux frais garnis 
 addStarters(content, "Soupe miso aux algues", "Un bol de bouillon léger aux algues wakame, tofu et ciboulette.", 3);
 
 // Titre principal pour les plats principaux
-const MainMenu = document.createElement("div");
-MainMenu.classList.add("main-menu");
-MainMenu.textContent = "Nos Plats";
-content.appendChild(MainMenu);
+const mainMenu = document.createElement("div");
+mainMenu.classList.add("main-menu");
+mainMenu.textContent = "Nos Plats";
+content.appendChild(mainMenu);
 
 // PLATS PRINCIPAUX
 function addMainDish(container, name, description, price) {
@@ -85,10 +88,10 @@ addMainDish(content, "Nouilles au bœuf", "Nouilles faites maison dans un bouill
 addMainDish(content, "Tofu braisé et légumes", "Option végétarienne : tofu mariné et braisé, servi avec du riz, légumes et sauce soja sucrée.", 8);
 
 // Titre principal pour les desserts
-const DessertMenu = document.createElement("div");
-DessertMenu.classList.add("dessert-menu");
-DessertMenu.textContent = "Nos Desserts";
-content.appendChild(DessertMenu);
+const dessertMenu = document.createElement("div");
+dessertMenu.classList.add("dessert-menu");
+dessertMenu.textContent = "Nos Desserts";
+content.appendChild(dessertMenu);
 
 // DESSERTS
 function addDessert(container, name, description, price) {
@@ -110,3 +113,4 @@ function addDessert(container, name, description, price) {
 
 addDessert(content, "Douhua (tofu soyeux sucré)", "Un dessert léger à base de tofu soyeux nappé de sirop de sucre brun et perles de tapioca.", 3);
 addDessert(content, "Mochis glacés", "Boules glacées enveloppées dans une pâte de riz douce. Parfaits pour finir sur une touche sucrée.", 2.5);
+};
