@@ -198,7 +198,9 @@ h3 {
 }
 
 .drink-item,
-.starter-item {
+.starter-item,
+.main-item,
+.dessert-item {
     background: #fffaef;
     padding: 20px;
     border-radius: 10px;
@@ -208,10 +210,33 @@ h3 {
 }
 
 .drink-menu,
-.starter-menu {
+.starter-menu,
+.main-menu,
+.dessert-menu {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
     color: #cc5500;
+    margin-top: 15px;
+}
+
+.drink-menu:hover,
+.starter-menu:hover,
+.main-menu:hover,
+.dessert-menu:hover {
+    color: #4a4a4a;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* CSS pour l'onglet contact */
+
+.contact {
+    background: #fffaef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }

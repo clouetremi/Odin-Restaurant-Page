@@ -56,6 +56,12 @@ addStarters(content, "Gua Bao (1 pièce)", "Petit pain vapeur garni de porc fond
 addStarters(content, "Rouleaux de printemps taïwanais", "Rouleaux frais garnis de légumes croquants, tofu, et herbes fraîches, servis avec une sauce à la cacahuète.", 3.5);
 addStarters(content, "Soupe miso aux algues", "Un bol de bouillon léger aux algues wakame, tofu et ciboulette.", 3);
 
+// Titre principal pour les plats principaux
+const MainMenu = document.createElement("div");
+MainMenu.classList.add("main-menu");
+MainMenu.textContent = "Nos Plats";
+content.appendChild(MainMenu);
+
 // PLATS PRINCIPAUX
 function addMainDish(container, name, description, price) {
     const mainItem = document.createElement("div");
@@ -77,6 +83,12 @@ function addMainDish(container, name, description, price) {
 addMainDish(content, "Bento au poulet croustillant", "Poulet frit façon taïwanaise, riz parfumé, légumes sautés et œuf mariné. Le classique !", 9);
 addMainDish(content, "Nouilles au bœuf", "Nouilles faites maison dans un bouillon riche au bœuf mijoté, avec légumes et ciboulette.", 10);
 addMainDish(content, "Tofu braisé et légumes", "Option végétarienne : tofu mariné et braisé, servi avec du riz, légumes et sauce soja sucrée.", 8);
+
+// Titre principal pour les desserts
+const DessertMenu = document.createElement("div");
+DessertMenu.classList.add("dessert-menu");
+DessertMenu.textContent = "Nos Desserts";
+content.appendChild(DessertMenu);
 
 // DESSERTS
 function addDessert(container, name, description, price) {
